@@ -72,11 +72,11 @@ export default function Home() {
             onChange={(e) => setAge(e.target.value)}
           />
 
-          <label>Choose a Story length under 1000 words: </label>
+          <label>Choose a Story length under 2000 words: </label>
           <input
             type="number"
             name="length"
-            placeholder="500 words is average"
+            placeholder="500 words is typical for young kids"
             value={length}
             onChange={(e) => setLength(Number.parseInt(e.target.value))}
           />
@@ -84,21 +84,29 @@ export default function Home() {
           <input
             type="text"
             name="theme"
-            placeholder="Is this a story about adventure?"
+            placeholder="Adventure? Friendship?"
             value={theme}
             onChange={(e) => setTheme(e.target.value)}
           />
           <label>
-            Describe the Details of Your Story! Character Names, Settings,
-            Anything Your Heart Desires.
+            Describe the Details of Your Story! Choose Character Names, Magic,
+            Beautiful Places, Anything Your Heart Desires.
           </label>
-          <input
+          <textarea
+            value={storyseed}
+            placeholder="What wonderful things do you want to read about?"
+            onChange={(e) => setStoryseed(e.target.value)}
+            rows={(e) => {e.target.value.split("\n").length}}
+           
+          />
+
+          {/* <input
             type="text"
             name="storyseed"
-            placeholder="Is this a story about adventure?"
+            placeholder="What wonderful things do you want to read about?"
             value={storyseed}
             onChange={(e) => setStoryseed(e.target.value)}
-          />
+          /> */}
           <input type="submit" value="Generate Story" />
         </form>
         {loading && (
