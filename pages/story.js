@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 
 export default function Home() {
   const [age, setAge] = useState("5 years");
-  const [length, setLength] = useState("500");
+  const [length, setLength] = useState("50");
   const [theme, setTheme] = useState("Friendship");
   const [storyseed, setStoryseed] = useState(
     "Tell me a story about a random animal in a random setting"
@@ -96,8 +96,9 @@ export default function Home() {
             value={storyseed}
             placeholder="What wonderful things do you want to read about?"
             onChange={(e) => setStoryseed(e.target.value)}
-            rows={(e) => {e.target.value.split("\n").length}}
-           
+            rows={(e) => {
+              e.target.value.split("\n").length;
+            }}
           />
 
           {/* <input
@@ -112,7 +113,7 @@ export default function Home() {
         {loading && (
           <div>
             <h3>Generating A Unique Story Just For You...</h3>
-            <img src="/loading.png" classname={styles.loading} />
+            <img classname={styles.loading} src="/loading.png" />
           </div>
         )}
         {result && (
