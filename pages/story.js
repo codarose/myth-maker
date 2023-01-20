@@ -110,13 +110,13 @@ export default function Home() {
           /> */}
           <input type="submit" value="Generate Story" />
         </form>
-        {loading && (
-          <div>
+        {/* {loading && ( */}
+          <div className={styles.imgcontainer}>
             <h3>Generating A Unique Story Just For You...</h3>
-            <img classname={styles.loading} src="/loading.png" />
+            <img src="/loading.png" className={styles.loading} />
           </div>
-        )}
-        {result && (
+        {/* )} */}
+        {result && !loading && (
           <div
             className={styles.result}
             dangerouslySetInnerHTML={{ __html: result }}
