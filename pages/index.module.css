@@ -35,15 +35,10 @@
 }
 
 .imgcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 60%;
 }
 
 .imgcontainer .loading {
-  flex: 1;
   max-width: 100%;
   text-align: center;
   margin-top: -20px;
