@@ -16,8 +16,8 @@
 .main,
 .main input,
 .main textarea {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   color: #353740;
   font-family: "ColfaxAI", Helvetica, sans-serif;
 }
@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 15px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -57,11 +57,11 @@
 }
 
 .main h3 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 40px;
   font-weight: bold;
   color: #202123;
-  margin: 16px 0 40px;
+  margin: 10px 0 20px;
 }
 .main form {
   display: flex;
@@ -75,7 +75,7 @@
   border: 1px solid #10a37f;
   border-radius: 4px;
   margin-top: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   outline-color: #10a37f;
   max-height: 100%;
 }

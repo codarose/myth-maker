@@ -108,14 +108,15 @@ export default function Home() {
             value={storyseed}
             onChange={(e) => setStoryseed(e.target.value)}
           /> */}
+
           <input type="submit" value="Generate Story" />
         </form>
-        {/* {loading && ( */}
+        {loading && (
           <div className={styles.imgcontainer}>
             <h3>Generating A Unique Story Just For You...</h3>
             <img src="/loading.png" className={styles.loading} />
           </div>
-        {/* )} */}
+        )}
         {result && !loading && (
           <div
             className={styles.result}
