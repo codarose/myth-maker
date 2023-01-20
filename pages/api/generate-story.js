@@ -51,7 +51,10 @@ export default async function (req, res) {
 }
 
 function generatePrompt(age, length, theme, storyseed) {
-  return `generate an appriximately ${length} word story designed for a child that is ${age} old. 
-  The theme of the story is ${theme}, and this is a description of the story: ${storyseed}
+  return `generate an approximately ${length} word story designed for a person that is ${age} old. 
+  The theme of the story is ${theme}, and this is a description of the story: ${storyseed}. Only include 
+  content and examples appropriate for a ${age} year old. In stories over 500 words, please include dialogue, vivid descriptions, 
+  and characters with complex motivations and back stories. 
+  
 `;
 }

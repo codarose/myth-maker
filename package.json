@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "dalle-node": "^1.0.8",
     "next": "^13.1.1",
     "openai": "^3.1.0",
     "react": "^18.2.0",
