@@ -57,6 +57,7 @@ export default function Home() {
       <Head>
         <title>Myth Maker</title>
         <link rel="icon" href="/wizardicon.png" />
+        <link rel="stylesheet" href="/reset.css" />
       </Head>
 
       <main className={styles.main}>
