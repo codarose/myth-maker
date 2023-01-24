@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Configuration, OpenAIApi } from "openai";
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -50,10 +51,20 @@ export default async function (req, res) {
 }
 
 function generatePrompt(age, length, theme, storyseed) {
-  return `generate an approximately ${length} word story designed for a person that is ${age} old. 
-  The theme of the story is ${theme}, and this is a description of the story: ${storyseed}. Only include 
-  content and examples appropriate for a ${age} year old. In stories over 500 words, please include dialogue, vivid descriptions, 
-  and characters with complex motivations and back stories. 
-  
+  return `You are a writer who loves to include many vivid sensory details in each
+   story you write, for example the smell of ozone, the roughness of tree bark, 
+   the taste of honey, the heat of the sun etcetera. You never explain the moral 
+   of the story, you trust your reader to draw their own conclusions. You like to
+    write characters with complex back stories and internal conflict.
+    Your stories include dialogue. All of your stories include a character 
+    dealing with a challenge. Your stories are very specific; places should 
+    have names, food dishes should be named, thoughts should be expressed in 
+    dialogue, knowledge about a subject or talent should be explained. You have 
+    expert level knowledge in any subject area mentioned in the story description.
+     Generate an approximately ${length} word story designed for a person that is in 
+     this age category: ${age} 
+  The theme of the story is ${theme}, and this is a 
+  description of the story: ${storyseed}. Please provide a title for the story at the beginning surrounded by 
+  quotes. The title should be no longer than 5 words and should only include letters or numbers.
 `;
 }
