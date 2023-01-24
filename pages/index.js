@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
 import styles from "./index.module.css";
-import { StoryContext } from "./context/Context";
-import Link from "next/link";
 export default function Home() {
   const [age, setAge] = useState("5 years");
   const [length, setLength] = useState("50");
