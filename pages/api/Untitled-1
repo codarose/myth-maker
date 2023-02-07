@@ -1,0 +1,4 @@
+curl -X POST localhost:3000/api/generate-story -H "Content-Type: application/json" -d '{"age": "four years", "length":"750 words", "theme":"forgiveness", "storyseed":"The main character should be a young boy named Lirenzo, whose sidekick is his little brother, Ardenino. Lirenzo and Ardenino go on adventures where they learn about science and physics. Please include simple physics lessons that are appropriate for a four or five year old."}'
+
+
+age, length, theme, storyseed
