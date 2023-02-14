@@ -15,7 +15,7 @@
 }
 .appbackground {
   height: 100vh;
-  background: linear-gradient(to bottom, #1e3c72, #2a5298, #4d648d, #918e82);
+  background: linear-gradient(to top, #1e3c72, #2a5298, #4d648d, #918e82);
 }
 
 .main,
